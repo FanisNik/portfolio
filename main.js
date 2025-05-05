@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         labels: ['Python', 'Swift', 'JavaScript', 'SQL', 'Cybersecurity', 'Cloud'],
         datasets: [{
           label: 'Skill Level',
-          data: [90, 75, 65, 70, 60, 50],
+          data: [70, 75, 85, 70, 60, 50],
           backgroundColor: [
             '#554a42',
             '#9d9995',
