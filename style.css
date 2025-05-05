@@ -222,3 +222,14 @@ body.dark #theme-toggle:hover {
 body.dark canvas {
   background-color: #1f1f1f;
 }
+
+.badge {
+  display: inline-block;
+  background-color: #effafb;
+  color: #333;
+  padding: 2px 8px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
