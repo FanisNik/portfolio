@@ -14,7 +14,8 @@
       <svg id="theme-icon" width="10" height="10"  fill="currentColor">
         <circle cx="5" cy="5" r="5" />
       </svg>
-    </button>  </header>
+    </button>  
+  </header>
 
   <section>
     <h2>About Me</h2>
@@ -22,9 +23,28 @@
   </section>
 
   <section>
-    <h2>Projects</h2>
-    
+    <h2>Tech Skills</h2>
+    <canvas id="skillsChart" width="300" height="300"></canvas>
   </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong><a href="https://github.com/FanisNik/PasswordGenerator" target="_blank">Password Generator</a></strong> - A Python desktop app using Tkinter that lets users generate secure passwords (4-25 characters) with one click and copy them directly to the clipboard..
+      </li>
+      <li>
+        <strong><a href="https://github.com/FanisNik/TicTacToe" target="_blank">Tic-Tac-Toe</a></strong> - A two player game built in Python with a Tkinter GUI. The app detects wins or ties and allows smooth turn based interaction.
+      </li>
+      <li>
+        <strong><a href="https://github.com/FanisNik/Calculator" target="_blank">Calculator</a></strong> - A modern, user friendly calculator built with Python and Tkinter. Supports basic arithmetic operations and includes a calculation history feature.
+      </li>
+      <li>
+        <strong><a href="https://github.com/FanisNik/gamenight" target="_blank">Game Night</a></strong> - A party game with 3 minigames and 2 play modes (Standard & Extreme). Users can skip questions, but they'll get a pop up challenge to take a random number of sips.
+      </li>
+    </ul>
+  </section>
+
 
   <section>
     <h2>Certifications</h2>
@@ -79,17 +99,7 @@
     <p><a href="Theofanis_Nikolaou_SE.pdf" download="Theofanis_Nikolaou_CV">Download my CV</a></p>
   </section>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-  
-    toggle.addEventListener('click', () => {
-      const isDark = document.body.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark');
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
