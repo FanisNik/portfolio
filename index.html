@@ -10,7 +10,11 @@
   <header>
     <h1>Theofanis Nikolaou</h1>
     <p>Junior Software Engineer</p>
-  </header>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <svg id="theme-icon" width="10" height="10"  fill="currentColor">
+        <circle cx="5" cy="5" r="5" />
+      </svg>
+    </button>  </header>
 
   <section>
     <h2>About Me</h2>
@@ -32,6 +36,7 @@
       <li>CS50 Introduction to Programming with Python (Harvard University)</li>
       <li>CS50 Understanding Technology (Harvard University)</li>
       <li>Python for Software Engineering Bootcamp (Udemy)</li>
+      <li>Connected Leadership (Yale University)</li>
       <li>Software Engineering 101: Plan and Execute Better Software (Udemy)</li>
       <li>Software Engineering Basics (IBM)</li>
       <li>Scrum Fundamentals Certified (SCRUMstudy)</li>
@@ -57,7 +62,13 @@
       <li>Diploma in Cybersecurity (Alison)</li>
       <li>Image Editing with Photoshop (Invelop Skills)</li>
       <li>Math Certificate (Hellenic Mathematical Society)</li>
-      <li>Connected Leadership (Yale University)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Honors & Awards</h2>
+    <ul>
+      <li>Learn-A-Thon 2024 <strong>Cisco Networking Academy</strong></li>
     </ul>
   </section>
 
@@ -66,5 +77,18 @@
     <p>Email: fanisnikolaou@icloud.com</p>
     <p>LinkedIn: <a href="https://linkedin.com/in/nikolaou-theofanis">Theofanis Nikolaou</a></p>
   </section>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+  
+    toggle.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+  </script>
 </body>
 </html>

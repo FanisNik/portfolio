@@ -157,3 +157,12 @@ a:hover {
     font-size: 0.95rem;
   }
 }
+#theme-toggle:hover svg,
+#theme-toggle:focus svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.2));
+}
+
+body.dark #theme-toggle {
+  color: #fff; 
+}
