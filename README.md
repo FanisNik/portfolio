@@ -23,4 +23,4 @@ Welcome to my personal portfolio repository! This is a web based project showcas
 
 ## Getting Started
 
-1. Open `index.html` in your browser to view the portfolio.
+1. Open `https://fanisnik.github.io/portfolio/` in your browser to view the portfolio.
