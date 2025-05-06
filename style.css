@@ -38,13 +38,14 @@ header p {
 
 section {
   margin-bottom: 60px;
-  padding-bottom: 20px;
+  padding: 20px 40px;
   border-bottom: 1px solid #333;
   background-color: #1f1f1f;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-in-out forwards;
   border-radius: 10px;
+  width: 100%;
 }
 
 section:nth-of-type(2) {
@@ -168,12 +169,13 @@ canvas {
   display: block;
   color: #e0e0e0;
   background-color: #1f1f1f;
+  
 }
 
 .badge {
   display: inline-block;
-  background-color: #effafb;
-  color: #333;
+  background-color: rgba(239, 250, 251, 0.2);
+  color: #cacaca;
   padding: 2px 8px;
   margin-top: 5px;
   font-size: 0.75rem;
@@ -218,7 +220,7 @@ canvas {
 .event-title {
   margin-bottom: 10px;
   font-size: 12px;
-  color: #333;
+  color: #f5f0f0;
 }
 
 .event-dot {
@@ -234,5 +236,5 @@ canvas {
 .event-date {
   margin-top: 10px;
   font-size: 11px;
-  color: #555;
+  color: #8c8a8a;
 }
