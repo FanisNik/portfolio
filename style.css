@@ -6,8 +6,8 @@
 
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f5f5f7;
-  color: #1d1d1f;
+  background-color: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
   scroll-behavior: smooth;
   padding: 40px 20px;
@@ -39,7 +39,8 @@ header p {
 section {
   margin-bottom: 60px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #333;
+  background-color: #1f1f1f;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-in-out forwards;
@@ -63,14 +64,15 @@ section:nth-of-type(5) {
 }
 
 section h2 {
+  color: #fff;
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 section p {
   font-size: 1.1rem;
-  color: #1d1d1f;
+  color: #e0e0e0;
 }
 
 ul {
@@ -81,17 +83,17 @@ ul {
 ul li {
   font-size: 1rem;
   padding: 6px 0;
-  color: #333;
+  color: #e0e0e0;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 ul li:hover {
   transform: translateX(5px);
-  color: #000;
+  color: #fff;
 }
 
 a {
-  color: #0071e3;
+  color: #1e90ff;
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.3s ease;
@@ -158,68 +160,13 @@ a:hover {
     font-size: 0.95rem;
   }
 }
-#theme-toggle:hover svg,
-#theme-toggle:focus svg {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 4px rgba(0,0,0,0.2));
-}
-
-body.dark #theme-toggle {
-  color: #fff;
-}
 
 canvas {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
-  color: #000;
-}
-
-section h2 {
-  color: inherit; 
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-section p, ul li {
-  color: inherit; 
-  font-size: 1.1rem;
-}
-
-body.dark {
-  background-color: #121212; 
-  color: #e0e0e0; 
-}
-
-body.dark section {
-  background-color: #1f1f1f;
-  border-color: #333;
-}
-
-body.dark a {
-  color: #1e90ff; 
-}
-
-body.dark section p,
-body.dark section ul li {
   color: #e0e0e0;
-}
-
-body.dark section h2 {
-  color: #fff;
-}
-
-body.dark #theme-toggle {
-  color: #fff;
-}
-
-body.dark #theme-toggle:hover {
-  color: #0071e3;
-}
-
-body.dark canvas {
   background-color: #1f1f1f;
 }
 
