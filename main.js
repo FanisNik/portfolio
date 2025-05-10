@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }]
     },
     options: {
+      responsive: true,  // Ensures the chart resizes with the screen
+      maintainAspectRatio: true,  // Keeps the aspect ratio fixed
       plugins: {
         legend: {
           position: 'bottom',

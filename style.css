@@ -196,6 +196,7 @@ canvas {
   position: relative;
   margin-top: 40px;
   padding: 20px 0;
+  width: 100%;
 }
 
 .timeline-horizontal::before {
@@ -218,9 +219,14 @@ canvas {
 }
 
 .event-title {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   margin-bottom: 10px;
   font-size: 12px;
   color: #f5f0f0;
+  white-space: nowrap;
 }
 
 .event-dot {
@@ -231,10 +237,42 @@ canvas {
   border-radius: 50%;
   margin: 0 auto;
   z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulse-dot {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 122, 204, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(0, 122, 204, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 122, 204, 0);
+  }
 }
 
 .event-date {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 10px;
   font-size: 11px;
   color: #8c8a8a;
 }
+#skillsChart {
+  width: 30% !important;  /* Ensures the canvas takes full width */
+  height: 300px; /* Fixed height, adjust as needed */
+}
+    .event-title a {
+      color: white;
+      text-decoration: none;
+    }
