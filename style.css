@@ -269,10 +269,30 @@ canvas {
   color: #8c8a8a;
 }
 #skillsChart {
-  width: 30% !important;  /* Ensures the canvas takes full width */
-  height: 300px; /* Fixed height, adjust as needed */
+  width: 30% !important;  
+  height: 300px; 
 }
     .event-title a {
       color: white;
       text-decoration: none;
     }
+
+    .gradient-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #4b5563, #9ca3af, #4b5563);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
